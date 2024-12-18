@@ -1,12 +1,10 @@
-import {View, Text, Button} from 'react-native';
-import React from 'react';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import tw from '../../theme/style';
-import {useAppColorScheme} from 'twrnc';
+import { View, Text, Button } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import tw from "../../theme/style"
+import { useAppColorScheme } from "twrnc"
 
 const LoginScreen = () => {
-  const [colorScheme, toggleColorScheme, setColorScheme] =
-    useAppColorScheme(tw);
+  const [colorScheme, toggleColorScheme, setColorScheme] = useAppColorScheme(tw)
 
   return (
     <SafeAreaView style={tw`flex-1 bg-red-400`}>
@@ -14,20 +12,21 @@ const LoginScreen = () => {
         <Text>LoginScreen</Text>
         <Button
           onPress={() => {
-            toggleColorScheme();
+            toggleColorScheme()
             // navigate('Login');
           }}
           title="navigate"
         />
         <Button
           onPress={() => {
-            // goBack();
+            setColorScheme(colorScheme)
+            goBack()
           }}
           title="back"
         />
       </View>
     </SafeAreaView>
-  );
-};
+  )
+}
 
-export default LoginScreen;
+export default LoginScreen

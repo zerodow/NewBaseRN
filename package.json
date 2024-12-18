@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "prepare": "husky init",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
+    "lint:check": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "adb": "adb reverse tcp:9090 tcp:9090 && adb reverse tcp:3000 tcp:3000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^7.2.0",
@@ -39,7 +42,12 @@
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
     "eslint": "^8.19.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-native": "^4.1.0",
+    "eslint-plugin-reactotron": "^0.1.5",
+    "husky": "^9.1.7",
     "jest": "^29.6.3",
+    "lint-staged": "^15.2.11",
     "prettier": "2.8.8",
     "react-test-renderer": "18.3.1",
     "typescript": "5.0.4"

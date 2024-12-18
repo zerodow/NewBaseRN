@@ -1,1 +1,1 @@
-export const KEYCHAIN_PASSKEY = 'mmkv';
+export const KEYCHAIN_PASSKEY = "mmkv"

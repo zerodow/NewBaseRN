@@ -1,7 +1,7 @@
-import {create} from 'twrnc';
+import { create } from "twrnc"
 
-const configTheme = require('../../tailwind.config');
+const configTheme = require("../../tailwind.config")
 
-const tw = create(configTheme);
+const tw = create(configTheme)
 
-export default tw;
+export default tw

@@ -1,1 +1,1 @@
-export * from './LoginScreen/LoginScreen';
+export * from "./LoginScreen/LoginScreen"
