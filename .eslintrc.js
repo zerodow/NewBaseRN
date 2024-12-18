@@ -1,5 +1,13 @@
 // https://docs.expo.dev/guides/using-eslint/
 module.exports = {
+  env: {
+    node: true, // Enables Node.js globals
+    browser: true, // Enables browser globals if needed
+    es2021: true, // Includes modern ECMAScript globals
+  },
+  globals: {
+    __DEV__: "readonly", // Add this line to recognize __DEV__
+  },
   extends: [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
@@ -35,6 +43,7 @@ module.exports = {
     "no-global-assign": 0,
     "quotes": 0,
     "space-before-function-paren": 0,
+    "no-undef": "error", //check func/var use but not import
   },
   settings: {
     react: {
