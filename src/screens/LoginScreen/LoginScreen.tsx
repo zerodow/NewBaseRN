@@ -2,6 +2,7 @@ import { View, Text, Button } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import tw from "../../theme/style"
 import { useAppColorScheme } from "twrnc"
+import { goBack } from "../../navigators/navigationUtilities"
 
 const LoginScreen = () => {
   const [colorScheme, toggleColorScheme, setColorScheme] = useAppColorScheme(tw)
@@ -20,6 +21,7 @@ const LoginScreen = () => {
         <Button
           onPress={() => {
             setColorScheme(colorScheme)
+
             goBack()
           }}
           title="back"
