@@ -3,6 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import tw from "../../theme/style"
 import { useAppColorScheme } from "twrnc"
 import { goBack } from "../../navigators/navigationUtilities"
+import Config from "react-native-config"
 
 const LoginScreen = () => {
   const [colorScheme, toggleColorScheme, setColorScheme] = useAppColorScheme(tw)
@@ -10,7 +11,7 @@ const LoginScreen = () => {
   return (
     <SafeAreaView style={tw`flex-1 bg-red-400`}>
       <View style={tw`flex-1 bg-black dark:bg-white`}>
-        <Text>LoginScreen</Text>
+        <Text style={tw`text-red-500 mt-5 text-[13px]`}>{Config.API_BASE_URL}</Text>
         <Button
           onPress={() => {
             toggleColorScheme()
