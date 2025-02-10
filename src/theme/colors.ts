@@ -1,111 +1,85 @@
+const palette = {
+  neutral100: "#FFFFFF",
+  neutral200: "#F4F2F1",
+  neutral300: "#D7CEC9",
+  neutral400: "#B6ACA6",
+  neutral500: "#978F8A",
+  neutral600: "#564E4A",
+  neutral700: "#3C3836",
+  neutral800: "#191015",
+  neutral900: "#000000",
+
+  primary100: "#F4E0D9",
+  primary200: "#E8C1B4",
+  primary300: "#DDA28E",
+  primary400: "#D28468",
+  primary500: "#C76542",
+  primary600: "#A54F31",
+
+  secondary100: "#DCDDE9",
+  secondary200: "#BCC0D6",
+  secondary300: "#9196B9",
+  secondary400: "#626894",
+  secondary500: "#41476E",
+
+  accent100: "#FFEED4",
+  accent200: "#FFE1B2",
+  accent300: "#FDD495",
+  accent400: "#FBC878",
+  accent500: "#FFBB50",
+
+  angry100: "#F2D6CD",
+  angry500: "#C03403",
+
+  overlay20: "rgba(25, 16, 21, 0.2)",
+  overlay50: "rgba(25, 16, 21, 0.5)",
+} as const
+
 export const colors = {
-  gray: {
-    10: "#FAFAFA",
-    50: "#F3F3F3",
-    100: "#F5F5F5",
-    150: "rgba(248, 248, 248, 1)",
-    200: "#D0D0D0",
-    300: "#B8B8B9",
-    400: "#A1A1A2",
-    500: "#89898A",
-    600: "#525252",
-    700: "#5B5B5C",
-    800: "#141414",
-    900: "#141416",
-  },
-  orange: {
-    50: "#FFF9F5",
-    100: "#FFF4ED",
-    200: "#FFE6D5",
-    300: "#FFD6AE",
-    400: "#FF9C66",
-    500: "#FF692E",
-    600: "rgba(246, 96, 27, 1)",
-    700: "#E62E05",
-    800: "#BC1B06",
-    900: "#97180C",
-  },
-  blue: {
-    50: "#F5F8FF",
-    100: "#EFF4FF",
-    200: "#D1E0FF",
-    300: "#B2CCFF",
-    400: "#84ADFF",
-    500: "#528BFF",
-    600: "#2970FF",
-    700: "#155EEF",
-    800: "#004EEB",
-    900: "#0040C1",
-  },
-  green: {
-    50: "#F6FEF9",
-    100: "#EDFCF2",
-    200: "#D3F8DF",
-    300: "#AAF0C4",
-    400: "#73E2A3",
-    500: "#12B76A",
-    600: "#16B364",
-    700: "#099250",
-    800: "#087443",
-    900: "#095C37",
-  },
-  red: {
-    50: "#FFFBFA",
-    100: "#FEF3F2",
-    200: "#FEE4E2",
-    300: "#FECDCA",
-    400: "#FDA29B",
-    500: "#F04438",
-    600: "#F04438",
-    700: "#D92D20",
-    800: "#B42318",
-    900: "#912018",
-  },
-  warning: {
-    600: "#DC6803",
-  },
-  primary: {
-    90: "#002868",
-    100: "rgba(239, 242, 245, 1)",
-    300: "#3275E0",
-    600: "#F6601B",
-  },
-  // primary: {
-  //   90: '#002868',
-  //   100: 'rgba(239, 242, 245, 1)',
-  //   300: '#3275E0',
-  //   600: '#043C95',
-  // },
-  navy: { 600: "#2C6CD2" },
-  white: "#FFFFFF",
-  black: "#000000",
-  white2: "rgba(255, 255, 255, 1)",
-  dropBack: "rgba(0,0,0,0.3)",
-  grayLight: "#999999",
-  grayLight1: "rgba(205, 208, 213, 1)1",
-  grayLight2: "#E9E9E9",
-  grayLight3: "#F8F8F8",
-  grayLight4: "#989898",
-  innerBorder: "#CBCBCB",
-  blueBold: "#2C6CD2",
-  disableColor: "#9C9C9C",
-  error: "#EE0033",
-  norText: "#1D1B20",
-  border: "#E4E4E4",
-  borderLine: "#ECF3FF",
-  newStartGradientNav: "#FB741C",
-  white50: "#FFFFFF50",
-  transparent: "#00000000",
-  yellow: "rgba(253, 200, 18, 1)",
-  title: "#1C1E21",
-  bg: "#F7F7F7",
-  success: "#26B170",
-  fail: "#E5423F",
-  pending: "#F2B13F",
-  featureBg: "#73A2EC17",
-  bgSavedTrans: "#EFF2F5",
-  pendingBg: "#FBE9C5",
-  color2Light: "#F6601B",
-  keyWhite: "#E8EAED",
-  keyDark: "#3A3D3A",
-}
+  /**
+   * The palette is available to use, but prefer using the name.
+   * This is only included for rare, one-off cases. Try to use
+   * semantic names as much as possible.
+   */
+  palette,
+  /**
+   * A helper for making something see-thru.
+   */
+  transparent: "rgba(0, 0, 0, 0)",
+  /**
+   * The default text color in many components.
+   */
+  text: palette.neutral800,
+  /**
+   * Secondary text information.
+   */
+  textDim: palette.neutral600,
+  /**
+   * The default color of the screen background.
+   */
+  background: palette.neutral200,
+  /**
+   * The default border color.
+   */
+  border: palette.neutral400,
+  /**
+   * The main tinting color.
+   */
+  tint: palette.primary500,
+  /**
+   * The inactive tinting color.
+   */
+  tintInactive: palette.neutral300,
+  /**
+   * A subtle color used for lines.
+   */
+  separator: palette.neutral300,
+  /**
+   * Error messages.
+   */
+  error: palette.angry500,
+  /**
+   * Error Background.
+   */
+  errorBackground: palette.angry100,
+} as const
