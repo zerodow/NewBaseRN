@@ -15,18 +15,18 @@
 		50DC4F1189CCF7EDFA2328A7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-HighlandApp-HighlandAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-HighlandApp-HighlandAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CEABB2C82D1579DE00D0562D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		CEABB2C92D1579DE00D0562D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		CEABB2CB2D1579DE00D0562D /* libPods-HighlandApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-HighlandApp.a */; };
-		CEABB2CD2D1579DE00D0562D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CEABB2CE2D1579DE00D0562D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		CEABB2CF2D1579DE00D0562D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		CEABB2DB2D1579E600D0562D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		CEABB2DC2D1579E600D0562D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		CEABB2DE2D1579E600D0562D /* libPods-HighlandApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-HighlandApp.a */; };
-		CEABB2E02D1579E600D0562D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CEABB2E12D1579E600D0562D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		CEABB2E22D1579E600D0562D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		CE47F91E2D59EE7C00D57FEE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		CE47F91F2D59EE7C00D57FEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		CE47F9212D59EE7C00D57FEE /* libPods-HighlandApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-HighlandApp.a */; };
+		CE47F9232D59EE7C00D57FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CE47F9242D59EE7C00D57FEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		CE47F9252D59EE7C00D57FEE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		CE47F9312D59EE7E00D57FEE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		CE47F9322D59EE7E00D57FEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		CE47F9342D59EE7E00D57FEE /* libPods-HighlandApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-HighlandApp.a */; };
+		CE47F9362D59EE7E00D57FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CE47F9372D59EE7E00D57FEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		CE47F9382D59EE7E00D57FEE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +57,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-HighlandApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HighlandApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = HighlandApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-HighlandApp-HighlandAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighlandApp-HighlandAppTests.release.xcconfig"; path = "Target Support Files/Pods-HighlandApp-HighlandAppTests/Pods-HighlandApp-HighlandAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		CEABB2D62D1579DE00D0562D /* Highland DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Highland DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEABB2D72D1579DE00D0562D /* HighlandApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "HighlandApp copy-Info.plist"; path = "/Users/user/Documents/HighlandApp/ios/HighlandApp copy-Info.plist"; sourceTree = "<absolute>"; };
-		CEABB2E92D1579E600D0562D /* Highland UAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Highland UAT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEABB2EA2D1579E600D0562D /* Highland DEV copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Highland DEV copy-Info.plist"; path = "/Users/user/Documents/HighlandApp/ios/Highland DEV copy-Info.plist"; sourceTree = "<absolute>"; };
+		CE47F92C2D59EE7C00D57FEE /* Highland DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Highland DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47F93F2D59EE7E00D57FEE /* Highland UAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Highland UAT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEABB2D72D1579DE00D0562D /* Highland UAT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Highland UAT-Info.plist"; path = "/Users/user/Documents/HighlandApp/ios/Highland UAT-Info.plist"; sourceTree = "<absolute>"; };
+		CEABB2EA2D1579E600D0562D /* Highland DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Highland DEV-Info.plist"; path = "/Users/user/Documents/HighlandApp/ios/Highland DEV-Info.plist"; sourceTree = "<absolute>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -81,19 +81,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEABB2CA2D1579DE00D0562D /* Frameworks */ = {
+		CE47F9202D59EE7C00D57FEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEABB2CB2D1579DE00D0562D /* libPods-HighlandApp.a in Frameworks */,
+				CE47F9212D59EE7C00D57FEE /* libPods-HighlandApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEABB2DD2D1579E600D0562D /* Frameworks */ = {
+		CE47F9332D59EE7E00D57FEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEABB2DE2D1579E600D0562D /* libPods-HighlandApp.a in Frameworks */,
+				CE47F9342D59EE7E00D57FEE /* libPods-HighlandApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +157,8 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				CEABB2D72D1579DE00D0562D /* HighlandApp copy-Info.plist */,
-				CEABB2EA2D1579E600D0562D /* Highland DEV copy-Info.plist */,
+				CEABB2D72D1579DE00D0562D /* Highland UAT-Info.plist */,
+				CEABB2EA2D1579E600D0562D /* Highland DEV-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -170,8 +170,8 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* HighlandApp.app */,
 				00E356EE1AD99517003FC87E /* HighlandAppTests.xctest */,
-				CEABB2D62D1579DE00D0562D /* Highland DEV.app */,
-				CEABB2E92D1579E600D0562D /* Highland UAT.app */,
+				CE47F92C2D59EE7C00D57FEE /* Highland DEV.app */,
+				CE47F93F2D59EE7E00D57FEE /* Highland UAT.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,17 +232,17 @@
 			productReference = 13B07F961A680F5B00A75B9A /* HighlandApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CEABB2C52D1579DE00D0562D /* Highland DEV */ = {
+		CE47F91B2D59EE7C00D57FEE /* Highland DEV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEABB2D32D1579DE00D0562D /* Build configuration list for PBXNativeTarget "Highland DEV" */;
+			buildConfigurationList = CE47F9292D59EE7C00D57FEE /* Build configuration list for PBXNativeTarget "Highland DEV" */;
 			buildPhases = (
-				CEABB2C62D1579DE00D0562D /* [CP] Check Pods Manifest.lock */,
-				CEABB2C72D1579DE00D0562D /* Sources */,
-				CEABB2CA2D1579DE00D0562D /* Frameworks */,
-				CEABB2CC2D1579DE00D0562D /* Resources */,
-				CEABB2D02D1579DE00D0562D /* Bundle React Native code and images */,
-				CEABB2D12D1579DE00D0562D /* [CP] Embed Pods Frameworks */,
-				CEABB2D22D1579DE00D0562D /* [CP] Copy Pods Resources */,
+				CE47F91C2D59EE7C00D57FEE /* [CP] Check Pods Manifest.lock */,
+				CE47F91D2D59EE7C00D57FEE /* Sources */,
+				CE47F9202D59EE7C00D57FEE /* Frameworks */,
+				CE47F9222D59EE7C00D57FEE /* Resources */,
+				CE47F9262D59EE7C00D57FEE /* Bundle React Native code and images */,
+				CE47F9272D59EE7C00D57FEE /* [CP] Embed Pods Frameworks */,
+				CE47F9282D59EE7C00D57FEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,20 +250,20 @@
 			);
 			name = "Highland DEV";
 			productName = HighlandApp;
-			productReference = CEABB2D62D1579DE00D0562D /* Highland DEV.app */;
+			productReference = CE47F92C2D59EE7C00D57FEE /* Highland DEV.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CEABB2D82D1579E600D0562D /* Highland UAT */ = {
+		CE47F92E2D59EE7E00D57FEE /* Highland UAT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEABB2E62D1579E600D0562D /* Build configuration list for PBXNativeTarget "Highland UAT" */;
+			buildConfigurationList = CE47F93C2D59EE7E00D57FEE /* Build configuration list for PBXNativeTarget "Highland UAT" */;
 			buildPhases = (
-				CEABB2D92D1579E600D0562D /* [CP] Check Pods Manifest.lock */,
-				CEABB2DA2D1579E600D0562D /* Sources */,
-				CEABB2DD2D1579E600D0562D /* Frameworks */,
-				CEABB2DF2D1579E600D0562D /* Resources */,
-				CEABB2E32D1579E600D0562D /* Bundle React Native code and images */,
-				CEABB2E42D1579E600D0562D /* [CP] Embed Pods Frameworks */,
-				CEABB2E52D1579E600D0562D /* [CP] Copy Pods Resources */,
+				CE47F92F2D59EE7E00D57FEE /* [CP] Check Pods Manifest.lock */,
+				CE47F9302D59EE7E00D57FEE /* Sources */,
+				CE47F9332D59EE7E00D57FEE /* Frameworks */,
+				CE47F9352D59EE7E00D57FEE /* Resources */,
+				CE47F9392D59EE7E00D57FEE /* Bundle React Native code and images */,
+				CE47F93A2D59EE7E00D57FEE /* [CP] Embed Pods Frameworks */,
+				CE47F93B2D59EE7E00D57FEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,7 +271,7 @@
 			);
 			name = "Highland UAT";
 			productName = HighlandApp;
-			productReference = CEABB2E92D1579E600D0562D /* Highland UAT.app */;
+			productReference = CE47F93F2D59EE7E00D57FEE /* Highland UAT.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -306,8 +306,8 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* HighlandApp */,
 				00E356ED1AD99517003FC87E /* HighlandAppTests */,
-				CEABB2C52D1579DE00D0562D /* Highland DEV */,
-				CEABB2D82D1579E600D0562D /* Highland UAT */,
+				CE47F91B2D59EE7C00D57FEE /* Highland DEV */,
+				CE47F92E2D59EE7E00D57FEE /* Highland UAT */,
 			);
 		};
 /* End PBXProject section */
@@ -330,23 +330,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEABB2CC2D1579DE00D0562D /* Resources */ = {
+		CE47F9222D59EE7C00D57FEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEABB2CD2D1579DE00D0562D /* LaunchScreen.storyboard in Resources */,
-				CEABB2CE2D1579DE00D0562D /* Images.xcassets in Resources */,
-				CEABB2CF2D1579DE00D0562D /* PrivacyInfo.xcprivacy in Resources */,
+				CE47F9232D59EE7C00D57FEE /* LaunchScreen.storyboard in Resources */,
+				CE47F9242D59EE7C00D57FEE /* Images.xcassets in Resources */,
+				CE47F9252D59EE7C00D57FEE /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEABB2DF2D1579E600D0562D /* Resources */ = {
+		CE47F9352D59EE7E00D57FEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEABB2E02D1579E600D0562D /* LaunchScreen.storyboard in Resources */,
-				CEABB2E12D1579E600D0562D /* Images.xcassets in Resources */,
-				CEABB2E22D1579E600D0562D /* PrivacyInfo.xcprivacy in Resources */,
+				CE47F9362D59EE7E00D57FEE /* LaunchScreen.storyboard in Resources */,
+				CE47F9372D59EE7E00D57FEE /* Images.xcassets in Resources */,
+				CE47F9382D59EE7E00D57FEE /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +447,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HighlandApp-HighlandAppTests/Pods-HighlandApp-HighlandAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEABB2C62D1579DE00D0562D /* [CP] Check Pods Manifest.lock */ = {
+		CE47F91C2D59EE7C00D57FEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -469,7 +469,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEABB2D02D1579DE00D0562D /* Bundle React Native code and images */ = {
+		CE47F9262D59EE7C00D57FEE /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,7 +485,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		CEABB2D12D1579DE00D0562D /* [CP] Embed Pods Frameworks */ = {
+		CE47F9272D59EE7C00D57FEE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,7 +502,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HighlandApp/Pods-HighlandApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEABB2D22D1579DE00D0562D /* [CP] Copy Pods Resources */ = {
+		CE47F9282D59EE7C00D57FEE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,7 +519,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HighlandApp/Pods-HighlandApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEABB2D92D1579E600D0562D /* [CP] Check Pods Manifest.lock */ = {
+		CE47F92F2D59EE7E00D57FEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -541,7 +541,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEABB2E32D1579E600D0562D /* Bundle React Native code and images */ = {
+		CE47F9392D59EE7E00D57FEE /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -557,7 +557,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		CEABB2E42D1579E600D0562D /* [CP] Embed Pods Frameworks */ = {
+		CE47F93A2D59EE7E00D57FEE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -574,7 +574,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HighlandApp/Pods-HighlandApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEABB2E52D1579E600D0562D /* [CP] Copy Pods Resources */ = {
+		CE47F93B2D59EE7E00D57FEE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -645,21 +645,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEABB2C72D1579DE00D0562D /* Sources */ = {
+		CE47F91D2D59EE7C00D57FEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEABB2C82D1579DE00D0562D /* AppDelegate.mm in Sources */,
-				CEABB2C92D1579DE00D0562D /* main.m in Sources */,
+				CE47F91E2D59EE7C00D57FEE /* AppDelegate.mm in Sources */,
+				CE47F91F2D59EE7C00D57FEE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEABB2DA2D1579E600D0562D /* Sources */ = {
+		CE47F9302D59EE7E00D57FEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEABB2DB2D1579E600D0562D /* AppDelegate.mm in Sources */,
-				CEABB2DC2D1579E600D0562D /* main.m in Sources */,
+				CE47F9312D59EE7E00D57FEE /* AppDelegate.mm in Sources */,
+				CE47F9322D59EE7E00D57FEE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,7 +929,7 @@
 			};
 			name = Release;
 		};
-		CEABB2D42D1579DE00D0562D /* Debug */ = {
+		CE47F92A2D59EE7C00D57FEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-HighlandApp.debug.xcconfig */;
 			buildSettings = {
@@ -937,8 +937,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "HighlandApp copy-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Highland DEV";
+				INFOPLIST_FILE = "Highland DEV-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = HighlandApp;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -959,15 +959,15 @@
 			};
 			name = Debug;
 		};
-		CEABB2D52D1579DE00D0562D /* Release */ = {
+		CE47F92B2D59EE7C00D57FEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-HighlandApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "HighlandApp copy-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Highland DEV";
+				INFOPLIST_FILE = "Highland DEV-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = HighlandApp;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -987,7 +987,7 @@
 			};
 			name = Release;
 		};
-		CEABB2E72D1579E600D0562D /* Debug */ = {
+		CE47F93D2D59EE7E00D57FEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-HighlandApp.debug.xcconfig */;
 			buildSettings = {
@@ -995,8 +995,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Highland DEV copy-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Highland UAT";
+				INFOPLIST_FILE = "Highland UAT-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = HighlandApp;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1017,15 +1017,15 @@
 			};
 			name = Debug;
 		};
-		CEABB2E82D1579E600D0562D /* Release */ = {
+		CE47F93E2D59EE7E00D57FEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-HighlandApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "Highland DEV copy-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Highland UAT";
+				INFOPLIST_FILE = "Highland UAT-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = HighlandApp;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1075,20 +1075,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEABB2D32D1579DE00D0562D /* Build configuration list for PBXNativeTarget "Highland DEV" */ = {
+		CE47F9292D59EE7C00D57FEE /* Build configuration list for PBXNativeTarget "Highland DEV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEABB2D42D1579DE00D0562D /* Debug */,
-				CEABB2D52D1579DE00D0562D /* Release */,
+				CE47F92A2D59EE7C00D57FEE /* Debug */,
+				CE47F92B2D59EE7C00D57FEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEABB2E62D1579E600D0562D /* Build configuration list for PBXNativeTarget "Highland UAT" */ = {
+		CE47F93C2D59EE7E00D57FEE /* Build configuration list for PBXNativeTarget "Highland UAT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEABB2E72D1579E600D0562D /* Debug */,
-				CEABB2E82D1579E600D0562D /* Release */,
+				CE47F93D2D59EE7E00D57FEE /* Debug */,
+				CE47F93E2D59EE7E00D57FEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

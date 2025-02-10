@@ -1,10 +1,12 @@
-import { StyleSheet, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
-
+import Config from "react-native-config"
 const LoginScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.wrapper} />
+      <View style={styles.wrapper}>
+        <Text>{Config.API_BASE_URL}</Text>
+      </View>
     </SafeAreaView>
   )
 }

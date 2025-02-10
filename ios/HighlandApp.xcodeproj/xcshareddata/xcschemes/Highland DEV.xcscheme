@@ -62,12 +62,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEABB2C52D1579DE00D0562D"
+            BlueprintIdentifier = "CE47F91B2D59EE7C00D57FEE"
             BuildableName = "Highland DEV.app"
             BlueprintName = "Highland DEV"
             ReferencedContainer = "container:HighlandApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEABB2C52D1579DE00D0562D"
+            BuildableName = "Highland DEV.app"
+            BlueprintName = "Highland DEV"
+            ReferencedContainer = "container:HighlandApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -85,6 +94,15 @@
             ReferencedContainer = "container:HighlandApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEABB2C52D1579DE00D0562D"
+            BuildableName = "Highland DEV.app"
+            BlueprintName = "Highland DEV"
+            ReferencedContainer = "container:HighlandApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
