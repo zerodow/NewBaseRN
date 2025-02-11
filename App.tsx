@@ -5,6 +5,13 @@ import * as storage from "./src/storage"
 
 export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE"
 
+if (__DEV__) {
+  // Load Reactotron in development only.
+  // Note that you must be using metro's `inlineRequires` for this to work.
+  // If you turn it off in metro.config.js, you'll have to manually import it.
+  require("./src/devtools/ReactotronConfig")
+}
+
 const App = () => {
   const {
     initialNavigationState,

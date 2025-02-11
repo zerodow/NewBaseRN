@@ -44,6 +44,7 @@ module.exports = {
     "quotes": 0,
     "space-before-function-paren": 0,
     "no-undef": "error", //check func/var use but not import
+    "react-native/no-unused-styles": 0,
   },
   settings: {
     react: {

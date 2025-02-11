@@ -35,7 +35,7 @@ const palette = {
   overlay50: "rgba(25, 16, 21, 0.5)",
 } as const
 
-export const colors = {
+export const colorsDark = {
   palette,
   transparent: "rgba(0, 0, 0, 0)",
   text: palette.neutral800,

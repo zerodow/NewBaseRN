@@ -17,7 +17,7 @@ import { ComponentProps } from "react"
 import React from "react"
 import { View } from "react-native"
 import LoginScreen from "../screens/LoginScreen/LoginScreen"
-import { useThemeProvider } from "../utils/useAppTheme"
+import { ThemeProvider } from "@/context/ThemeContext"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -85,16 +85,12 @@ const AppStack = () => {
 export interface NavigationProps extends Partial<ComponentProps<typeof NavigationContainer>> {}
 
 export const AppNavigator = (props: NavigationProps) => {
-  const { themeScheme, navigationTheme, setThemeContextOverride, ThemeProvider } =
-    useThemeProvider()
-
   useBackButtonHandler((routeName) => exitRoutes.includes(routeName))
 
   return (
-    <ThemeProvider value={{ themeScheme, setThemeContextOverride }}>
+    <ThemeProvider>
       <NavigationContainer
         {...props}
-        theme={navigationTheme}
         ref={navigationRef as React.Ref<NavigationContainerRef<any>>}
         fallback={<View />}
         onReady={() => {}}
