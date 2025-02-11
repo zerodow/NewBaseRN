@@ -1,50 +1,21 @@
 import { NavigationContainer } from "@react-navigation/native"
-import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navigation/native-stack"
 import { ComponentProps } from "react"
-import LoginScreen from "../screens/LoginScreen/LoginScreen"
-
-export type AppStackParamList = {
-  Welcome: undefined
-  Login: undefined
-  // Demo: NavigatorScreenParams<DemoTabParamList>;
-  // 🔥 Your screens go here
-  // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
-}
-
-export type AppStackScreenProps<T extends keyof AppStackParamList> = NativeStackScreenProps<
-  AppStackParamList,
-  T
->
+import AuthStack from "./AuthStack"
+import { useMMKVBoolean } from "react-native-mmkv"
+import STORAGE_KEY from "@/storage/keyManager"
+import { storage } from "@/storage"
+import MainTabs from "./MainTab"
 
 export interface NavigationProps extends Partial<ComponentProps<typeof NavigationContainer>> {}
-
-const Stack = createNativeStackNavigator<AppStackParamList>()
 
 export const AppStack = () => {
   // const {
   //   authenticationStore: {isAuthenticated},
   // } = useStores();
+  const [isLoggedIn] = useMMKVBoolean(STORAGE_KEY.LOGGED_IN, storage)
 
-  // const {
-  //   theme: {colors},
-  // } = useAppTheme();
-
-  return (
-    <Stack.Navigator
-      screenOptions={{
-        headerShown: false,
-        // navigationBarColor: colors.background,
-        // contentStyle: {
-        //   backgroundColor: colors.background,
-        // },
-      }}
-      initialRouteName={"Welcome"}
-    >
-      <Stack.Screen name="Welcome" component={LoginScreen} />
-      <Stack.Screen name="Login" component={LoginScreen} />
-
-      {/** 🔥 Your screens go here */}
-      {/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
-    </Stack.Navigator>
-  )
+  if (isLoggedIn) {
+    return <MainTabs />
+  }
+  return <AuthStack />
 }

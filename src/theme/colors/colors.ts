@@ -7,7 +7,7 @@ const palette = {
   neutral600: "#564E4A",
   neutral700: "#3C3836",
   neutral800: "#191015",
-  neutral900: "#000000",
+  neutral900: "#777777",
 
   primary100: "#F4E0D9",
   primary200: "#E8C1B4",
@@ -41,7 +41,7 @@ export const colors = {
    * This is only included for rare, one-off cases. Try to use
    * semantic names as much as possible.
    */
-  palette,
+  ...palette,
   /**
    * A helper for making something see-thru.
    */

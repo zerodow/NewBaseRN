@@ -36,7 +36,7 @@ const palette = {
 } as const
 
 export const colorsDark = {
-  palette,
+  ...palette,
   transparent: "rgba(0, 0, 0, 0)",
   text: palette.neutral800,
   textDim: palette.neutral600,
