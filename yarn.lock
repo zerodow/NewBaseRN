@@ -6239,6 +6239,11 @@ react-native-mmkv@^3.2.0:
   resolved "https://registry.yarnpkg.com/react-native-mmkv/-/react-native-mmkv-3.2.0.tgz#460723eb23b9cc92c65b0416eae9874a6ddf5b82"
   integrity sha512-9y7K//1MaU46TFrXkyU0wT5VGk9Y2FDLFV6NPl+z3jTbm2G7SC1UIxneF6CfhSmBX5CfKze9SO7kwDuRx7flpQ==
 
+react-native-network-logger@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/react-native-network-logger/-/react-native-network-logger-1.17.0.tgz#09c337f39e84dc74b84f1b2b978a0ed46bbc1a25"
+  integrity sha512-FXiUH9hMnuBhhRrj88k0nMDUKvAJoS49P/E05L/MGjfD/iI15UktGsTutCAPkstXtqxctnNhAjYER7DXbiUf8w==
+
 react-native-randombytes@^3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/react-native-randombytes/-/react-native-randombytes-3.6.1.tgz#cac578093b5ca38e3e085becffdc6cbcf6f0d654"

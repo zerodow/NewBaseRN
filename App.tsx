@@ -7,13 +7,7 @@ import { NavigationContainer, NavigationContainerRef } from "@react-navigation/n
 import { View } from "react-native"
 import { AppStack } from "@/navigators"
 import { loadDateFnsLocale } from "@/utils/formatDate"
-
-if (__DEV__) {
-  // Load Reactotron in development only.
-  // Note that you must be using metro's `inlineRequires` for this to work.
-  // If you turn it off in metro.config.js, you'll have to manually import it.
-  require("./src/devtools/ReactotronConfig")
-}
+import NetworkButton from "@/devtools/network-logger/NetworkButton"
 
 const exitRoutes = ["welcomeScreen"]
 
@@ -42,6 +36,7 @@ const App = () => {
           onReady={() => {}}
         >
           <AppStack />
+          {!__DEV__ && <NetworkButton />}
         </NavigationContainer>
       </ThemeProvider>
     </SafeAreaProvider>

@@ -6,12 +6,20 @@ import { navigate } from "@/navigators/navigationUtilities"
 import Config from "react-native-config"
 
 const WelcomeScreen = () => {
+  const testRequest = () => {
+    fetch("http://localhost:3000/test")
+      .then((response) => response.json())
+      .then((data) => console.log("Data received:", data))
+      .catch((error) => console.error("Error:", error))
+  }
+
   return (
     <SafeAreaWrapper>
       <CommonHeader title="Welcome Screen asdasd" />
       <View style={commonStyles.flex1}>
         <Text>{Config.API_BASE_URL}</Text>
         <Button title="To Login" onPress={() => navigate("Login")} />
+        <Button title="Test Request" onPress={() => testRequest()} />
       </View>
     </SafeAreaWrapper>
   )

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react"
 import { BackHandler, Platform } from "react-native"
 import {
+  CommonActions,
   NavigationState,
   PartialState,
   createNavigationContainerRef,
@@ -98,6 +99,17 @@ export function navigate(name: unknown, params?: unknown) {
   if (navigationRef.isReady()) {
     // @ts-expect-error
     navigationRef.navigate(name as never, params as never)
+  }
+}
+
+export function replace(name: never, params?: never) {
+  if (navigationRef.isReady()) {
+    navigationRef.dispatch(
+      CommonActions.reset({
+        index: 0,
+        routes: [{ name, params }],
+      }),
+    )
   }
 }
 
