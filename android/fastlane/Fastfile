@@ -17,7 +17,7 @@ platform :android do
       task: "assemble",
       flavor: flavor.capitalize, # Capitalize flavor (dev -> Dev)
       build_type: "Release",
-      project_dir: "android",
+      project_dir: "..",
       properties: {
         "android.injected.signing.store.file" => ENV["KEYSTORE_FILE"] || "debug.keystore",
         "android.injected.signing.store.password" => ENV["KEYSTORE_PASSWORD"],
