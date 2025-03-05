@@ -8,4 +8,9 @@ export const commonStyles = StyleSheet.create({
   flex1: {
     flex: 1,
   },
+  flexCenter: {
+    alignItems: "center",
+    flex: 1,
+    justifyContent: "center",
+  },
 })

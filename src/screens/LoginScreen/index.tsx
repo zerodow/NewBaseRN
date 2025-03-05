@@ -5,7 +5,7 @@ import CommonHeader from "@/components/CommonHeader"
 import { commonStyles } from "@/theme/commonStyles"
 import { navigate } from "@/navigators/navigationUtilities"
 import { save } from "@/storage"
-import STORAGE_KEY from "@/storage/keyManager"
+import STORAGE_KEY from "@/storage/storageKey"
 
 const LoginScreen = () => {
   return (

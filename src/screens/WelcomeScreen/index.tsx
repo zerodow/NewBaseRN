@@ -3,13 +3,14 @@ import CommonHeader from "@/components/CommonHeader"
 import { Button, Text, View } from "react-native"
 import { commonStyles } from "@/theme/commonStyles"
 import { navigate } from "@/navigators/navigationUtilities"
+import Config from "react-native-config"
 
 const WelcomeScreen = () => {
   return (
     <SafeAreaWrapper>
       <CommonHeader title="Welcome Screen asdasd" />
       <View style={commonStyles.flex1}>
-        <Text>asdasdads</Text>
+        <Text>{Config.API_BASE_URL}</Text>
         <Button title="To Login" onPress={() => navigate("Login")} />
       </View>
     </SafeAreaWrapper>

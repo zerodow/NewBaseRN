@@ -1,6 +1,6 @@
 import { View, Text, Button } from "react-native"
 import { remove } from "@/storage"
-import STORAGE_KEY from "@/storage/keyManager"
+import STORAGE_KEY from "@/storage/storageKey"
 
 const ProfileScreen = () => {
   return (

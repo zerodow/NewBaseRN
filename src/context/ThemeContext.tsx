@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useCallback } from "react"
 import { Appearance } from "react-native"
 import { Theme, ThemeMode, ThemeContextType } from "../types/theme"
 import { loadString, saveString } from "@/storage"
-import STORAGE_KEY from "@/storage/keyManager"
+import STORAGE_KEY from "@/storage/storageKey"
 import { darkTheme, lightTheme } from "@/theme"
 import { THEME_MODES } from "@/utils/constant"
 

@@ -7,7 +7,7 @@ import "dayjs/locale/en"
 
 import { LANGUAGE_NAME } from "@/utils/constant"
 import { loadString, saveString } from "@/storage"
-import STORAGE_KEY from "@/storage/keyManager"
+import STORAGE_KEY from "@/storage/storageKey"
 import { initReactI18next } from "react-i18next"
 
 const en = require("./en/en.json")
@@ -38,7 +38,7 @@ export const initI18n = async () => {
     interpolation: {
       escapeValue: false,
     },
-    debug: __DEV__,
+    debug: false,
     compatibilityJSON: "v4",
   })
 

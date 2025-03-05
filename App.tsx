@@ -1,16 +1,9 @@
 import { initialWindowMetrics, SafeAreaProvider } from "react-native-safe-area-context"
-import {
-  navigationRef,
-  useBackButtonHandler,
-  useNavigationPersistence,
-} from "./src/navigators/navigationUtilities"
-import * as storage from "./src/storage"
-import STORAGE_KEY from "@/storage/keyManager"
+import { navigationRef, useBackButtonHandler } from "./src/navigators/navigationUtilities"
 import React, { useEffect, useState } from "react"
 import { initI18n } from "@/i18n"
 import { ThemeProvider } from "@/context/ThemeContext"
 import { NavigationContainer, NavigationContainerRef } from "@react-navigation/native"
-import Config from "@/config"
 import { View } from "react-native"
 import { AppStack } from "@/navigators"
 import { loadDateFnsLocale } from "@/utils/formatDate"
@@ -22,14 +15,10 @@ if (__DEV__) {
   require("./src/devtools/ReactotronConfig")
 }
 
-const App = () => {
-  const {
-    initialNavigationState,
-    onNavigationStateChange,
-    isRestored: isNavigationStateRestored,
-  } = useNavigationPersistence(storage, STORAGE_KEY.NAVIGATION_STATE)
+const exitRoutes = ["welcomeScreen"]
 
-  useBackButtonHandler((routeName) => Config.exitRoutes.includes(routeName))
+const App = () => {
+  useBackButtonHandler((routeName) => exitRoutes.includes(routeName))
 
   const [isI18nInitialized, setIsI18nInitialized] = useState<boolean>(false)
 
@@ -40,7 +29,7 @@ const App = () => {
       .then(() => loadDateFnsLocale())
   }, [])
 
-  if (!isNavigationStateRestored || !isI18nInitialized) {
+  if (!isI18nInitialized) {
     return null
   }
 
@@ -48,8 +37,6 @@ const App = () => {
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
       <ThemeProvider>
         <NavigationContainer
-          initialState={initialNavigationState}
-          onStateChange={onNavigationStateChange}
           ref={navigationRef as React.Ref<NavigationContainerRef<any>>}
           fallback={<View />}
           onReady={() => {}}

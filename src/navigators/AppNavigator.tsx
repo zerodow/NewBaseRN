@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native"
 import { ComponentProps } from "react"
 import AuthStack from "./AuthStack"
 import { useMMKVBoolean } from "react-native-mmkv"
-import STORAGE_KEY from "@/storage/keyManager"
+import STORAGE_KEY from "@/storage/storageKey"
 import { storage } from "@/storage"
 import MainTabs from "./MainTab"
 

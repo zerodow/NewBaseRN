@@ -14,27 +14,35 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'HighlandApp' do
+# Function to include common pods for all targets
+def common_pods(target_name)
   config = use_native_modules!
 
   use_react_native!(
     :path => config[:reactNativePath],
-    # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'HighlandAppTests' do
-    inherit! :complete
-    # Pods for testing
-  end
+end
 
-  post_install do |installer|
-    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
-    react_native_post_install(
-      installer,
-      config[:reactNativePath],
-      :mac_catalyst_enabled => false,
-      # :ccache_enabled => true
-    )
-  end
+# ✅ Apply common_pods to each target
+target 'HighlandApp' do
+  common_pods('HighlandApp')
+end
+
+target 'Highland DEV' do
+  common_pods('Highland DEV')
+end
+
+target 'Highland UAT' do
+  common_pods('Highland UAT')
+end
+
+# ✅ Define a single `post_install` hook for all targets
+post_install do |installer|
+  react_native_post_install(
+    installer,
+    use_native_modules![:reactNativePath],
+    :mac_catalyst_enabled => false
+  )
 end
