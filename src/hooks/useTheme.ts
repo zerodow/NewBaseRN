@@ -1,9 +1,20 @@
-import { useContext } from "react"
-import { ThemeContext } from "../context/ThemeContext"
+import { Theme, ThemeMode } from "@/types/theme"
+import useThemeStore from "@/stores/themeStore"
 
-export const useTheme = () => {
-  const { theme, isDarkMode, toggleTheme, followSystem, enableSystemTheme } =
-    useContext(ThemeContext)
+// Hook to get theme
+const useTheme = (): Theme => useThemeStore((state) => state.theme)
 
-  return { theme, isDarkMode, toggleTheme, followSystem, enableSystemTheme }
-}
+// Hook to get mode
+export const useThemeMode = (): ThemeMode => useThemeStore((state) => state.mode)
+
+// Hook to toggle theme
+export const useToggleTheme = (): (() => void) => useThemeStore((state) => state.toggleTheme)
+
+// Hook to enable system theme
+export const useEnableSystemTheme = (): (() => void) =>
+  useThemeStore((state) => state.enableSystemTheme)
+
+// Hook to check if following system
+export const useFollowSystem = (): boolean => useThemeStore((state) => state.followSystem)
+
+export default useTheme

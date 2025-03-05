@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native"
 import React from "react"
 import { useTranslation } from "react-i18next"
-import { useTheme } from "@/hooks/useTheme"
+
 import { Theme } from "@/types/theme"
 import { commonStyles } from "@/theme/commonStyles"
 import { goBack } from "@/navigators/navigationUtilities"
+import useTheme from "@/hooks/useTheme"
 
 interface CommonHeaderProps {
   title: string
@@ -13,7 +14,7 @@ interface CommonHeaderProps {
 
 const CommonHeader: React.FC<CommonHeaderProps> = ({ title }) => {
   const { t } = useTranslation()
-  const { theme } = useTheme()
+  const theme = useTheme()
   const styles = createStyles(theme)
 
   const pressLeft = () => {

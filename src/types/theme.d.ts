@@ -5,7 +5,8 @@ export interface Theme {
 
 export type ThemeMode = "light" | "dark" | "system"
 
-export interface ThemeContextType {
+export interface ThemeState {
+  mode: ThemeMode
   theme: Theme
   isDarkMode: boolean
   followSystem: boolean

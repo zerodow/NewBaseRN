@@ -1,4 +1,4 @@
-import { useTheme } from "@/hooks/useTheme"
+import useTheme from "@/hooks/useTheme"
 import { Theme } from "@/types/theme"
 import React, { ReactNode } from "react"
 import { StyleSheet } from "react-native"
@@ -9,7 +9,7 @@ interface SafeAreaWrapperProps {
 }
 
 const SafeAreaWrapper: React.FC<SafeAreaWrapperProps> = ({ children }) => {
-  const { theme } = useTheme()
+  const theme = useTheme()
   const styles = createStyles(theme)
   return (
     <SafeAreaView edges={["top", "left", "right"]} style={styles.container}>
