@@ -1,37 +1,48 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
-
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
-
-default_platform(:android)
-
 platform :android do
-  desc "Build and distribute Android app"
-  lane :beta do
+  desc "Build a signed APK for a specific flavor"
+  lane :build_apk do |options|
+    flavor = options[:flavor] || "prod" # Default to prod if no flavor specified
+
     # Ensure clean Git status
     ensure_git_status_clean
 
-    # Install dependencies
+    # Install RN dependencies from project root
     sh "cd .. && npm install"
 
-    # Build the app
+    # Clean previous builds
+    gradle(task: "clean", project_dir: "android")
+
+    # Build the signed APK for the specified flavor
     gradle(
-      task: "bundle",
+      task: "assemble",
+      flavor: flavor.capitalize, # Capitalize flavor (dev -> Dev)
       build_type: "Release",
-      project_dir: "android"
+      project_dir: "android",
+      properties: {
+        "android.injected.signing.store.file" => ENV["KEYSTORE_FILE"] || "debug.keystore",
+        "android.injected.signing.store.password" => ENV["KEYSTORE_PASSWORD"],
+        "android.injected.signing.key.alias" => ENV["KEY_ALIAS"],
+        "android.injected.signing.key.password" => ENV["KEY_PASSWORD"]
+      }
     )
 
-    # Placeholder for Firebase distribution (added later)
-    puts "Android build complete!"
+    # Output path for APK
+    apk_path = "android/app/build/outputs/apk/#{flavor}/release/app-#{flavor}-release.apk"
+    puts "APK built successfully at: #{apk_path}"
+  end
+
+  desc "Build Dev APK"
+  lane :dev do
+    build_apk(flavor: "dev")
+  end
+
+  desc "Build UAT APK"
+  lane :uat do
+    build_apk(flavor: "uat")
+  end
+
+  desc "Build Prod APK"
+  lane :prod do
+    build_apk(flavor: "prod")
   end
 end

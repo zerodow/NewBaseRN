@@ -1,5 +1,4 @@
-fastlane documentation
-----
+## fastlane documentation
 
 # Installation
 
@@ -15,15 +14,39 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## Android
 
-### android beta
+### android build_apk
 
 ```sh
-[bundle exec] fastlane android beta
+[bundle exec] fastlane android build_apk
 ```
 
-Build and distribute Android app
+Build a signed APK for a specific flavor
 
-----
+### android dev
+
+```sh
+[bundle exec] fastlane android dev
+```
+
+Build Dev APK
+
+### android uat
+
+```sh
+[bundle exec] fastlane android uat
+```
+
+Build UAT APK
+
+### android prod
+
+```sh
+[bundle exec] fastlane android prod
+```
+
+Build Prod APK
+
+---
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
 
