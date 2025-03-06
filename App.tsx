@@ -8,8 +8,19 @@ import { AppStack } from "@/navigators"
 import { loadDateFnsLocale } from "@/utils/formatDate"
 import NetworkButton from "@/devtools/network-logger/NetworkButton"
 import useSystemTheme from "@/hooks/useSystemTheme"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 const exitRoutes = ["welcomeScreen"]
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 1,
+      refetchOnWindowFocus: false,
+      staleTime: 30000,
+    },
+  },
+})
 
 const App = () => {
   useSystemTheme()
@@ -30,14 +41,16 @@ const App = () => {
 
   return (
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <NavigationContainer
-        ref={navigationRef as React.Ref<NavigationContainerRef<any>>}
-        fallback={<View />}
-        onReady={() => {}}
-      >
-        <AppStack />
-        {!__DEV__ && <NetworkButton />}
-      </NavigationContainer>
+      <QueryClientProvider client={queryClient}>
+        <NavigationContainer
+          ref={navigationRef as React.Ref<NavigationContainerRef<any>>}
+          fallback={<View />}
+          onReady={() => {}}
+        >
+          <AppStack />
+          {!__DEV__ && <NetworkButton />}
+        </NavigationContainer>
+      </QueryClientProvider>
     </SafeAreaProvider>
   )
 }

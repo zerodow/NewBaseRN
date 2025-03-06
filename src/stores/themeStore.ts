@@ -1,5 +1,5 @@
-import { loadString, zustandStorage } from "@/storage"
-import STORAGE_KEY from "@/storage/storageKey"
+import { loadString, zustandStorage } from "@/utils/storage"
+import STORAGE_KEY from "@/utils/storage/storageKey"
 import { darkTheme, lightTheme } from "@/theme"
 import { ThemeMode, ThemeState } from "@/types/theme"
 import { THEME_MODES } from "@/utils/constant"

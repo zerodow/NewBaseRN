@@ -4,8 +4,8 @@ import SafeAreaWrapper from "@/components/SafeAreaWrapper"
 import CommonHeader from "@/components/CommonHeader"
 import { commonStyles } from "@/theme/commonStyles"
 import { navigate, replace } from "@/navigators/navigationUtilities"
-import { save } from "@/storage"
-import STORAGE_KEY from "@/storage/storageKey"
+import { save } from "@/utils/storage"
+import STORAGE_KEY from "@/utils/storage/storageKey"
 
 const LoginScreen = () => {
   return (

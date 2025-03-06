@@ -13,3 +13,8 @@ export interface ThemeState {
   toggleTheme: () => void
   enableSystemTheme: () => void
 }
+
+export interface CommonResponse {
+  status?: boolean
+  message: string
+}

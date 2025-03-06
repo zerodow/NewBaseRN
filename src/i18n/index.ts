@@ -6,8 +6,8 @@ import customParseFormat from "dayjs/plugin/customParseFormat"
 import "dayjs/locale/en"
 
 import { LANGUAGE_NAME } from "@/utils/constant"
-import { loadString, saveString } from "@/storage"
-import STORAGE_KEY from "@/storage/storageKey"
+import { loadString, saveString } from "@/utils/storage"
+import STORAGE_KEY from "@/utils/storage/storageKey"
 import { initReactI18next } from "react-i18next"
 
 const en = require("./en/en.json")
