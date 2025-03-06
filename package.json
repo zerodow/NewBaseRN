@@ -16,7 +16,11 @@
     "lint:check": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "bundle:visualize": "npx react-native-bundle-visualizer"
+    "bundle:visualize": "npx react-native-bundle-visualizer",
+    "build:dev": "cd android && fastlane android dev && cd ..",
+    "build:uat": "cd android && fastlane android uat && cd ..",
+    "build:prod": "cd android && fastlane android build_apk && cd ..",
+    "build:prod-aab": "cd android && fastlane android build_aab && cd .."
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^7.2.0",

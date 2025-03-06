@@ -22,6 +22,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Build a signed APK for a specific flavor
 
+### android build_aab
+
+```sh
+[bundle exec] fastlane android build_aab
+```
+
+Build a signed AAB for a specific flavor
+
 ### android dev
 
 ```sh
@@ -44,7 +52,7 @@ Build UAT APK
 [bundle exec] fastlane android prod
 ```
 
-Build Prod APK
+Build Prod APK or AAB
 
 ---
 
